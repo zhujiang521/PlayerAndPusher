@@ -22,10 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.zj.audio.AuditActivity"/>
-
-        <activity android:name=".PlayActivity"/>
-
     </application>
 
 </manifest>

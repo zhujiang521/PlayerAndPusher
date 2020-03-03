@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 import com.zj.audio.AuditActivity;
+import com.zj.audio.LiveRecording;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,9 +56,7 @@ public class TVChannelActivity extends AppCompatActivity {
                 tvTvName.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(TVChannelActivity.this,PlayActivity.class);
-                        intent.putExtra("tvUrl",tvBean.getUrl());
-                        startActivity(intent);
+                        BroadcastLive.create(TVChannelActivity.this).setDataUrl(tvBean.getUrl()).build();
                     }
                 });
             }
@@ -65,6 +64,6 @@ public class TVChannelActivity extends AppCompatActivity {
     }
 
     public void startAudit(View view) {
-        startActivity(new Intent(this, AuditActivity.class));
+        LiveRecording.create(this).setDataUrl("rtmp://106.13.175.12/myapp/mystream").build();
     }
 }

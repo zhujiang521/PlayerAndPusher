@@ -4,4 +4,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".PlayActivity"
+            android:configChanges="orientation|screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="sensor" />
+
+    </application>
+
 </manifest>
