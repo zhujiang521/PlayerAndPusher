@@ -1,5 +1,6 @@
-## 安卓一行代码实现视频直播（rtmp）以及直播推流（NDK实现）
 [！[]（https://jitpack.io/v/zhujiang521/PlayerAndPusher.svg）]（https://jitpack.io/#zhujiang521/PlayerAndPusher）
+
+## 安卓一行代码实现视频直播（rtmp）以及直播推流（NDK实现）
 
 ### 前言
 
