@@ -64,6 +64,11 @@ public class TVChannelActivity extends AppCompatActivity {
     }
 
     public void startAudit(View view) {
-        LiveRecording.create(this).setDataUrl("rtmp://106.13.175.12/myapp/mystream").build();
+        LiveRecording.create(this).setDataUrl("rtmp://106.13.175.12/myapp/mystream")
+                .setWidth(800)
+                .setHeight(400)
+                .setFps(10)
+                .setBitrate(800_000)
+                .build();
     }
 }
